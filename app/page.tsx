@@ -40,10 +40,10 @@ function Hero() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-90 leading-[1.1] mb-6">
             Your phone never stops ringing.<br />
-            Neither do we.
+            Our AI agents turn every ring into revenue.
           </h1>
           <p className="text-xl text-gray-50 leading-relaxed mb-10 max-w-2xl">
-            Hyper Intelligent builds AI phone agents, smart business agents, and websites that turn browsers into buyers — for local shops, service businesses, and growing companies. No enterprise minimums. No 12-month rollouts.
+            Booking appointments, qualifying leads, and supporting customers — while you focus on running your business. AI phone agents that actually work, built for local shops and growing companies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
