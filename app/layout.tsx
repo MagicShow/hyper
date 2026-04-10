@@ -16,7 +16,11 @@ export const metadata: Metadata = {
   title: "Hyper Intelligent — AI Phone Agents, Agent Solutions & Websites for Local Business",
   description:
     "AI phone agents, smart business agents, and websites that turn browsers into buyers — for local shops, service businesses, and growing companies. No enterprise minimums. Results in days.",
-  keywords: "AI phone agent, AI for small business, local business AI, AI lead generation, AI answering service",
+  keywords:
+    "AI phone agent, AI for small business, local business AI, AI lead generation, AI answering service",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${geist.variable} ${geistMono.variable} antialiased bg-gray-10 text-gray-90`}>
+      <body
+        className={`${geist.variable} ${geistMono.variable} antialiased bg-gray-10 text-gray-90`}
+      >
         {children}
       </body>
     </html>

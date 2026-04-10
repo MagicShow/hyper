@@ -2,7 +2,23 @@
 
 **Prepared by:** Strategy Agent, Agentic Marketing Squad
 **Date:** 2026-04-08
-**Status:** v1.0 — Ready for content agents
+**Last Updated:** 2026-04-10
+**Status:** v2.0 — Refreshed for new AI phone agents + ma-pa focus
+
+---
+
+## ⚠️ Positioning Update — April 10, 2026
+
+**New focus:** AI for local & small/medium businesses (ma & pa type)
+
+- **Lead service:** AI Phone Agents (24/7 answering, booking, routing)
+- **Secondary:** AI Agent Solutions (lead qualification, follow-ups, scheduling)
+- **Tertiary:** Websites & Lead Gen (conversion-focused sites)
+- **Target:** 1–100 employee businesses, local shops, service businesses
+- **Hero headline:** "Your phone never stops ringing. Neither do we."
+- **Tagline:** "AI that actually runs your business"
+
+---
 
 ---
 

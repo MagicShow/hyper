@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 // ─── COMPONENTS ──────────────────────────────────────────────────────────────
@@ -6,12 +7,12 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-20">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 rounded-full bg-accent" />
+        <Link href="/" className="flex items-center gap-2">
+          <Image src="/logo-h-bolt.svg" alt="Hyper Intelligent" width={32} height={32} />
           <span className="font-semibold text-sm tracking-tight text-gray-90">
             HYPER INTELLIGENT
           </span>
-        </div>
+        </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm text-gray-50">
           <a href="#services" className="hover:text-gray-90 transition-colors">Services</a>
           <a href="#process" className="hover:text-gray-90 transition-colors">How It Works</a>

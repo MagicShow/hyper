@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <!-- Icon mark -->
+  <path d="M10 8 L4 25 L9 25 L3 42 L18 20 L12 20 Z" fill="#4f8fff"/>
+  <!-- Wordmark -->
+  <text x="28" y="34" font-family="system-ui, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#181820">HYPER</text>
+  <text x="28" y="46" font-family="system-ui, sans-serif" font-size="9" font-weight="400" letter-spacing="3" fill="#888896">INTELLIGENT</text>
+</svg>
