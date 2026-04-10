@@ -35,21 +35,21 @@ function Hero() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-20 text-xs text-gray-50 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            AI Implementation for Small & Mid-Sized Businesses
+            AI for Local & Small Business — Phone Agents, Agents & Websites
           </div>
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-90 leading-[1.1] mb-6">
-            We don&apos;t consult.<br />
-            We build.
+            Your phone never stops ringing.<br />
+            Neither do we.
           </h1>
           <p className="text-xl text-gray-50 leading-relaxed mb-10 max-w-2xl">
-            Hyper Intelligent integrates AI into your operations — not with slide decks, but with working systems. Workflow automation, AI agents, smart integrations. Results in weeks, not quarters.
+            Hyper Intelligent builds AI phone agents, smart business agents, and websites that turn browsers into buyers — for local shops, service businesses, and growing companies. No enterprise minimums. No 12-month rollouts.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="#contact"
               className="bg-accent text-white font-medium px-6 py-3 rounded-full hover:bg-accent-bright transition-colors text-center"
             >
-              See How It Works
+              Book a Free Call
             </Link>
             <Link
               href="#services"
@@ -72,21 +72,21 @@ function Problem() {
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-30 mb-4">The Problem</p>
             <h2 className="text-4xl font-bold leading-tight mb-6">
-              You&apos;ve heard the AI pitch.<br />Where&apos;s the AI product?
+              You&apos;re busy running your business.<br />AI should be working for you.
             </h2>
             <p className="text-gray-30 leading-relaxed mb-6">
-              Most AI consulting firms hand you a 200-slide strategy deck and wish you luck. You&apos;re left to figure out implementation yourself — if you even get that far.
+              Every big company has a team for this. You have yourself, maybe a few employees, and a to-do list that never ends. Meanwhile, calls go to voicemail, follow-ups slip through the cracks, and your website is just a digital business card.
             </p>
             <p className="text-gray-30 leading-relaxed">
-              Meanwhile, your competitors are already running AI-powered customer service, automated workflows, and intelligent decision systems. While you&apos;re still waiting for Phase 1.
+              You don&apos;t need another app. You need AI that runs in the background — answering your phone, following up with leads, and bringing in revenue while you focus on what only you can do.
             </p>
           </div>
           <div className="space-y-4">
             {[
-              { label: "Consultants disappear after the report", cross: true },
-              { label: "AI tools sitting unused because no one knows how to integrate them", cross: true },
-              { label: "Months of planning, zero working systems", cross: true },
-              { label: "Employees overwhelmed, not empowered", cross: true },
+              { label: "Calls going to voicemail — and never getting returned", cross: true },
+              { label: "Leads that come in but slip through the cracks", cross: true },
+              { label: "Social media and website that just... sit there", cross: true },
+              { label: "No time to figure out AI — you're busy running the business", cross: true },
             ].map(({ label }) => (
               <div key={label} className="flex items-start gap-3 text-gray-30">
                 <span className="text-red-400 mt-0.5">✗</span>
@@ -95,7 +95,7 @@ function Problem() {
             ))}
             <div className="pt-4 border-t border-gray-80 flex items-start gap-3 text-white font-medium">
               <span className="text-accent mt-0.5">✓</span>
-              <span>Hyper Intelligent builds. Then we stay until it works.</span>
+              <span>Hyper Intelligent sets up the AI, connects it to your tools, and keeps it running.</span>
             </div>
           </div>
         </div>
@@ -108,33 +108,33 @@ function Services() {
   const services = [
     {
       number: "01",
-      title: "AI Strategy & Roadmapping",
+      title: "AI Phone Agents",
       description:
-        "We audit your current operations, identify where AI creates the most leverage, and build a clear implementation roadmap. No fluff — just prioritized opportunities ranked by impact and feasibility.",
+        "A real voice picks up your calls — 24/7. Answers questions, books appointments, takes orders, routes leads. Miss zero calls again, even at 11pm on a Sunday.",
     },
     {
       number: "02",
-      title: "Workflow Automation",
+      title: "AI Agent Solutions",
       description:
-        "We find the repetitive work eating your team's time and automate it. Email parsing, data entry, reporting, approvals — whatever your people are doing manually, we make it instant.",
+        "Smart digital workers that handle your repetitive tasks — qualifying leads, following up, managing appointments, answering customer questions. Always on, never burns out.",
     },
     {
       number: "03",
-      title: "AI Agent Integration",
+      title: "Websites & Lead Gen",
       description:
-        "Custom AI agents that handle real business tasks: customer inquiries, lead qualification, document processing, internal searches. Agents trained on your data, integrated into your tools.",
+        "Fast-loading, conversion-focused websites built to turn visitors into paying customers. Landing pages, local business sites, and lead capture systems that actually work.",
     },
     {
       number: "04",
-      title: "AI Training & Adoption",
+      title: "AI Integration & Migration",
       description:
-        "Your team won't adopt AI they don't understand. We train your people to work with AI fluently — not just use it, but know when to trust it and when to override it.",
+        "We connect AI into your existing tools and workflows — your phone system, scheduling software, CRM, email. It all works together, seamlessly.",
     },
     {
       number: "05",
-      title: "Ongoing AI Management",
+      title: "Ongoing Support",
       description:
-        "AI systems drift. Models go stale. We stay on retainer to monitor, update, and optimize your AI stack so it keeps delivering as your business changes.",
+        "We don't disappear after launch. Monthly support to monitor, update, and improve your AI systems as your business grows.",
     },
   ];
 
@@ -142,7 +142,7 @@ function Services() {
     <section id="services" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <p className="text-xs uppercase tracking-widest text-gray-50 mb-4">What We Do</p>
-        <h2 className="text-4xl font-bold text-gray-90 mb-16">Full-stack AI integration</h2>
+        <h2 className="text-4xl font-bold text-gray-90 mb-16">AI that actually runs your business</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map(({ number, title, description }) => (
             <div key={number} className="p-6 rounded-2xl border border-gray-20 hover:border-gray-30 transition-colors">
@@ -161,33 +161,33 @@ function Process() {
   const steps = [
     {
       number: "01",
-      title: "Discover",
+      title: "Listen",
       description:
-        "We spend 2–3 days in your business — interviews, workflows, data sources. We learn what your people actually do all day.",
+        "We learn your business — how you take calls, how you follow up, what's costing you time and money. One short call with you does it.",
     },
     {
       number: "02",
       title: "Build",
       description:
-        "We build the highest-leverage AI system first — the one that creates immediate time savings or revenue impact. Typically live within 2–4 weeks.",
+        "We build your AI system and get it live fast — most projects done in 1–2 weeks. Phone agent, website, or agent workflow.",
     },
     {
       number: "03",
-      title: "Integrate",
+      title: "Connect",
       description:
-        "We don't hand you a tool and disappear. We integrate AI into exactly where your team works — your email, your CRM, your database.",
+        "We hook it into your existing tools — your phone, calendar, CRM, website. It works the way you work.",
     },
     {
       number: "04",
-      title: "Train & Launch",
+      title: "Launch",
       description:
-        "We train your team on how to use it, what to trust, and how to flag when it's wrong. Launch is when they actually use it, not when we hand it off.",
+        "We don't hand off and walk away. We stay on until it's running right and your team actually trusts it.",
     },
     {
       number: "05",
-      title: "Measure & Optimize",
+      title: "Support",
       description:
-        "We track the impact. Time saved, tasks automated, errors reduced. You'll have a dashboard and a review cadence, not a mystery.",
+        "Monthly support keeps everything running and improving. Your AI grows as your business does.",
     },
   ];
 
@@ -195,7 +195,7 @@ function Process() {
     <section id="process" className="py-24 px-6 bg-gray-10">
       <div className="max-w-6xl mx-auto">
         <p className="text-xs uppercase tracking-widest text-gray-50 mb-4">How It Works</p>
-        <h2 className="text-4xl font-bold text-gray-90 mb-16">From discovery to results in weeks</h2>
+        <h2 className="text-4xl font-bold text-gray-90 mb-16">From first call to working AI in days</h2>
         <div className="grid md:grid-cols-5 gap-6">
           {steps.map(({ number, title, description }) => (
             <div key={number}>
@@ -218,20 +218,20 @@ function About() {
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-50 mb-4">About</p>
             <h2 className="text-4xl font-bold text-gray-90 leading-tight mb-6">
-              Built by people who&apos;ve actually shipped AI products
+              Built for the businesses that keep communities running
             </h2>
             <p className="text-gray-50 leading-relaxed mb-6">
-              Hyper Intelligent was founded on a simple frustration: too many AI consultancies sell certainty and deliver decks. We came up through AI product development — we've built the systems we're asking clients to trust us with.
+              Hyper Intelligent was founded on a simple frustration: local shops, service businesses, and growing companies get ignored by AI. All the tools are built for enterprise. We built Hyper for you.
             </p>
             <p className="text-gray-50 leading-relaxed">
-              We work with a small number of clients at a time. Not because we're small — because quality AI integration requires real attention. We take on clients we can deliver transformative results for, not just check a box.
+              We work with a small number of clients at a time — because quality AI requires real attention. You get a team that answers your calls, builds what you need, and sticks around.
             </p>
           </div>
           <div className="space-y-6">
             {[
-              { metric: "2–4 weeks", label: "to first working AI system" },
-              { metric: "10–200", label: "employee businesses we work with" },
-              { metric: "Unlimited", label: "support during engagement" },
+              { metric: "1–2 weeks", label: "to first live AI system" },
+              { metric: "1–100", label: "employee businesses we work with" },
+              { metric: "24/7", label: "phone agents available" },
             ].map(({ metric, label }) => (
               <div key={label} className="p-6 rounded-2xl bg-gray-90 text-white">
                 <div className="text-3xl font-bold mb-1">{metric}</div>
@@ -253,7 +253,7 @@ function Contact() {
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-30 mb-4">Contact</p>
             <h2 className="text-4xl font-bold leading-tight mb-6">
-              Ready to stop planning and start building?
+              Ready to stop doing everything yourself?
             </h2>
             <p className="text-gray-30 leading-relaxed mb-8">
               Tell us about your business — what&apos;s slowing you down, what you wish was automated, where AI could change the game for you. We&apos;ll give you a straight answer on whether we&apos;re the right fit.
@@ -274,31 +274,31 @@ function Contact() {
           <form className="space-y-5">
             <div>
               <label className="block text-xs uppercase tracking-widest text-gray-30 mb-2">
-                Company Name
+                Business Name
               </label>
               <input
                 type="text"
-                placeholder="Your company"
+                placeholder="Your business"
                 className="w-full bg-gray-80 border border-gray-70 rounded-xl px-4 py-3 text-white placeholder-gray-50 text-sm focus:outline-none focus:border-accent transition-colors"
               />
             </div>
             <div>
               <label className="block text-xs uppercase tracking-widest text-gray-30 mb-2">
-                Work Email
+                Phone or Email
               </label>
               <input
-                type="email"
-                placeholder="you@company.com"
+                type="text"
+                placeholder="How do we reach you?"
                 className="w-full bg-gray-80 border border-gray-70 rounded-xl px-4 py-3 text-white placeholder-gray-50 text-sm focus:outline-none focus:border-accent transition-colors"
               />
             </div>
             <div>
               <label className="block text-xs uppercase tracking-widest text-gray-30 mb-2">
-                Where are you stuck with AI?
+                What do you need help with?
               </label>
               <textarea
                 rows={4}
-                placeholder="Tell us briefly what you're trying to do, what's in your way, or what you've already tried..."
+                placeholder="Tell us briefly what you're dealing with — calls, leads, website, all of the above..."
                 className="w-full bg-gray-80 border border-gray-70 rounded-xl px-4 py-3 text-white placeholder-gray-50 text-sm focus:outline-none focus:border-accent transition-colors resize-none"
               />
             </div>
@@ -306,7 +306,7 @@ function Contact() {
               type="submit"
               className="w-full bg-accent text-white font-medium py-3 rounded-full hover:bg-accent-bright transition-colors"
             >
-              Send Message
+              Get a Free Consultation
             </button>
             <p className="text-xs text-gray-30 text-center">
               No sales pitch. Just a straight conversation about whether we can help.

@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hyper Intelligent — AI Transformation for Businesses That Actually Work",
+  title: "Hyper Intelligent — AI Phone Agents, Agent Solutions & Websites for Local Business",
   description:
-    "We integrate AI into small and mid-sized companies. Not presentations. Not reports. Working AI systems that cut costs, save time, and give you an edge.",
-  keywords: "AI consulting, AI implementation, business automation, AI integration, small business AI",
+    "AI phone agents, smart business agents, and websites that turn browsers into buyers — for local shops, service businesses, and growing companies. No enterprise minimums. Results in days.",
+  keywords: "AI phone agent, AI for small business, local business AI, AI lead generation, AI answering service",
 };
 
 export default function RootLayout({
