@@ -258,7 +258,7 @@ function Consultation() {
               rel="noopener noreferrer"
               className="block w-full bg-white text-accent font-semibold py-3 rounded-full text-center hover:bg-white/90 transition-colors"
             >
-              Book Your ${PRICE} Strategy Call →
+              Book Your {PRICE} Strategy Call →
             </a>
             <p className="text-xs text-white/50 text-center mt-4">
               Or <Link href="/consultation" className="underline hover:text-white/80">see the full consultation page</Link> with process details, FAQ, and calendar booking.
