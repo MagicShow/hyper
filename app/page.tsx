@@ -320,8 +320,8 @@ function Contact() {
             <div className="space-y-3 text-sm text-gray-30">
               <div>
                 <span className="text-gray-30">Email:</span>{" "}
-                <a href="mailto:hello@hyperintelligent.com" className="text-white hover:text-accent transition-colors">
-                  hello@hyperintelligent.com
+                <a href="mailto:scott@hyperintelligent.dev" className="text-white hover:text-accent transition-colors">
+                  scott@hyperintelligent.dev
                 </a>
               </div>
               <div>
@@ -330,13 +330,18 @@ function Contact() {
               </div>
             </div>
           </div>
-          <form className="space-y-5">
+          <form
+            action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+            method="POST"
+            className="space-y-5"
+          >
             <div>
               <label className="block text-xs uppercase tracking-widest text-gray-30 mb-2">
                 Business Name
               </label>
               <input
                 type="text"
+                name="business_name"
                 placeholder="Your business"
                 className="w-full bg-gray-80 border border-gray-70 rounded-xl px-4 py-3 text-white placeholder-gray-50 text-sm focus:outline-none focus:border-accent transition-colors"
               />
@@ -347,7 +352,9 @@ function Contact() {
               </label>
               <input
                 type="text"
+                name="contact"
                 placeholder="How do we reach you?"
+                required
                 className="w-full bg-gray-80 border border-gray-70 rounded-xl px-4 py-3 text-white placeholder-gray-50 text-sm focus:outline-none focus:border-accent transition-colors"
               />
             </div>
@@ -356,8 +363,10 @@ function Contact() {
                 What do you need help with?
               </label>
               <textarea
+                name="message"
                 rows={4}
                 placeholder="Tell us briefly what you're dealing with — calls, leads, website, all of the above..."
+                required
                 className="w-full bg-gray-80 border border-gray-70 rounded-xl px-4 py-3 text-white placeholder-gray-50 text-sm focus:outline-none focus:border-accent transition-colors resize-none"
               />
             </div>
@@ -380,12 +389,17 @@ function Contact() {
 function Footer() {
   return (
     <footer className="py-8 px-6 border-t border-gray-20">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 rounded-full bg-accent" />
-          <span className="font-semibold text-sm text-gray-90">HYPER INTELLIGENT</span>
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-6">
+        <div className="flex flex-col gap-1">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-2 h-2 rounded-full bg-accent" />
+            <span className="font-semibold text-sm text-gray-90">HYPER INTELLIGENT</span>
+          </div>
+          <p className="text-xs text-gray-30">Woodburn, OR</p>
+          <a href="tel:+19712432063" className="text-xs text-gray-30 hover:text-gray-90 transition-colors">971-243-2063</a>
+          <a href="mailto:scott@hyperintelligent.dev" className="text-xs text-gray-30 hover:text-gray-90 transition-colors">scott@hyperintelligent.dev</a>
         </div>
-        <p className="text-xs text-gray-30">
+        <p className="text-xs text-gray-30 self-start md:self-auto">
           © 2026 Hyper Intelligent. AI that actually works.
         </p>
       </div>
