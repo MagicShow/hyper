@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const PRICE = "$299";
+
 // ─── COMPONENTS ──────────────────────────────────────────────────────────────
 
 function Header() {
@@ -14,6 +16,7 @@ function Header() {
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm text-gray-50">
+          <a href="#consultation" className="hover:text-gray-90 transition-colors">Consultation</a>
           <a href="#services" className="hover:text-gray-90 transition-colors">Services</a>
           <a href="#process" className="hover:text-gray-90 transition-colors">How It Works</a>
           <a href="#about" className="hover:text-gray-90 transition-colors">About</a>
@@ -211,6 +214,61 @@ function Process() {
   );
 }
 
+function Consultation() {
+  return (
+    <section id="consultation" className="py-24 px-6 bg-accent text-white">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-white/60 mb-4">AI Business Solutions</p>
+            <h2 className="text-4xl font-bold leading-tight mb-6">
+              Not sure where AI fits your business?
+              <br />Let&apos;s map it out together.
+            </h2>
+            <p className="text-white/80 leading-relaxed mb-6">
+              Book a 45-minute strategy call with us. We&apos;ll hear about your business, identify the biggest time-wasters and bottlenecks, and assess where AI can make the biggest impact — fast.
+            </p>
+            <p className="text-white/80 leading-relaxed">
+              You walk away with a concrete, actionable AI automation plan — custom to your business. No fluff, no pitch. Just clarity on what to do next.
+            </p>
+          </div>
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div className="mb-6">
+              <div className="text-5xl font-bold mb-2">$299</div>
+              <div className="text-sm text-white/60">45-Minute Strategy Call + AI Automation Plan</div>
+            </div>
+            <ul className="space-y-4 mb-8">
+              {[
+                "Deep dive into your business operations and pain points",
+                "Identify the highest-impact AI opportunities for your workflow",
+                "Receive a written AI automation plan — delivered after the call",
+                "Specific tool recommendations and implementation roadmap",
+                "Clear pricing on next steps — no hidden costs",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-white/90">
+                  <span className="text-white mt-0.5 shrink-0">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href="https://cal.com/hyperintelligent/45min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-white text-accent font-semibold py-3 rounded-full text-center hover:bg-white/90 transition-colors"
+            >
+              Book Your ${PRICE} Strategy Call →
+            </a>
+            <p className="text-xs text-white/50 text-center mt-4">
+              Or <Link href="/consultation" className="underline hover:text-white/80">see the full consultation page</Link> with process details, FAQ, and calendar booking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function About() {
   return (
     <section id="about" className="py-24 px-6">
@@ -344,6 +402,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <Services />
+      <Consultation />
       <Process />
       <About />
       <Contact />
