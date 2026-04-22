@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "./ContactForm";
 
 const PRICE = "$299";
 
@@ -330,56 +331,7 @@ function Contact() {
               </div>
             </div>
           </div>
-          <form
-            action="https://formspree.io/f/YOUR_FORMSPREE_ID"
-            method="POST"
-            className="space-y-5"
-          >
-            <div>
-              <label className="block text-xs uppercase tracking-widest text-gray-30 mb-2">
-                Business Name
-              </label>
-              <input
-                type="text"
-                name="business_name"
-                placeholder="Your business"
-                className="w-full bg-gray-80 border border-gray-70 rounded-xl px-4 py-3 text-white placeholder-gray-50 text-sm focus:outline-none focus:border-accent transition-colors"
-              />
-            </div>
-            <div>
-              <label className="block text-xs uppercase tracking-widest text-gray-30 mb-2">
-                Phone or Email
-              </label>
-              <input
-                type="text"
-                name="contact"
-                placeholder="How do we reach you?"
-                required
-                className="w-full bg-gray-80 border border-gray-70 rounded-xl px-4 py-3 text-white placeholder-gray-50 text-sm focus:outline-none focus:border-accent transition-colors"
-              />
-            </div>
-            <div>
-              <label className="block text-xs uppercase tracking-widest text-gray-30 mb-2">
-                What do you need help with?
-              </label>
-              <textarea
-                name="message"
-                rows={4}
-                placeholder="Tell us briefly what you're dealing with — calls, leads, website, all of the above..."
-                required
-                className="w-full bg-gray-80 border border-gray-70 rounded-xl px-4 py-3 text-white placeholder-gray-50 text-sm focus:outline-none focus:border-accent transition-colors resize-none"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-accent text-white font-medium py-3 rounded-full hover:bg-accent-bright transition-colors"
-            >
-              Get a Free Consultation
-            </button>
-            <p className="text-xs text-gray-30 text-center">
-              No sales pitch. Just a straight conversation about whether we can help.
-            </p>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </section>
