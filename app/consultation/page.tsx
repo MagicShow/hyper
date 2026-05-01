@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // ─── PROPS ────────────────────────────────────────────────────────────────────
-// Replace CALCOM_URL with your actual cal.com booking link
-export const CALCOM_URL = "https://cal.com/hyperintelligent/45min";
+export const CALCOM_URL = "https://calendly.com/scott-hyperintelligent/30min";
 export const PRICE = "$499";
 export const CALL_DURATION = "45 minutes";
 

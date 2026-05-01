@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "./ContactForm";
 
+const CALCOM_URL = "https://calendly.com/scott-hyperintelligent/30min";
 const PRICE = "$299";
 
 // ─── COMPONENTS ──────────────────────────────────────────────────────────────
@@ -18,16 +19,18 @@ function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm text-gray-50">
           <a href="#consultation" className="hover:text-gray-90 transition-colors">Consultation</a>
-          <a href="#services" className="hover:text-gray-90 transition-colors">Services</a>
+          <a href="#pricing" className="hover:text-gray-90 transition-colors">Services</a>
           <a href="#process" className="hover:text-gray-90 transition-colors">How It Works</a>
           <a href="#about" className="hover:text-gray-90 transition-colors">About</a>
         </nav>
-        <Link
-          href="#contact"
+        <a
+          href={CALCOM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-gray-90 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-80 transition-colors"
         >
-          Get Started
-        </Link>
+          Book a Call
+        </a>
       </div>
     </header>
   );
@@ -40,27 +43,28 @@ function Hero() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-20 text-xs text-gray-50 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            AI for Local & Small Business — Phone Agents, Agents & Websites
+            AI Automation Consulting for Business
           </div>
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-90 leading-[1.1] mb-6">
-            Your phone never stops ringing.<br />
-            Our AI agents turn every ring into revenue.
+            AI Automation that cuts costs<br />and drives revenue.
           </h1>
           <p className="text-xl text-gray-50 leading-relaxed mb-10 max-w-2xl">
-            Booking appointments, qualifying leads, and supporting customers — while you focus on running your business. AI phone agents that actually work, built for local shops and growing companies.
+            From AI phone agents to custom automations — we audit your business, recommend the right AI solutions, and build what actually moves the needle. Start with a $299 AI Audit + Solutions call.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="#contact"
+            <a
+              href={CALCOM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-accent text-white font-medium px-6 py-3 rounded-full hover:bg-accent-bright transition-colors text-center"
             >
-              Book a Free Call
-            </Link>
+              Book Your AI Audit &amp; Solutions Call — {PRICE} →
+            </a>
             <Link
-              href="#services"
+              href="/ai-automation-services"
               className="border border-gray-30 text-gray-90 font-medium px-6 py-3 rounded-full hover:bg-gray-20 transition-colors text-center"
             >
-              View Services
+              View Automation Services
             </Link>
           </div>
         </div>
@@ -109,53 +113,138 @@ function Problem() {
   );
 }
 
-function Services() {
-  const services = [
-    {
-      number: "01",
-      title: "AI Phone Agents",
-      description:
-        "A real voice picks up your calls — 24/7. Answers questions, books appointments, takes orders, routes leads. Miss zero calls again, even at 11pm on a Sunday.",
-    },
-    {
-      number: "02",
-      title: "AI Agent Solutions",
-      description:
-        "Smart digital workers that handle your repetitive tasks — qualifying leads, following up, managing appointments, answering customer questions. Always on, never burns out.",
-    },
-    {
-      number: "03",
-      title: "Websites & Lead Gen",
-      description:
-        "Fast-loading, conversion-focused websites built to turn visitors into paying customers. Landing pages, local business sites, and lead capture systems that actually work.",
-    },
-    {
-      number: "04",
-      title: "AI Integration & Migration",
-      description:
-        "We connect AI into your existing tools and workflows — your phone system, scheduling software, CRM, email. It all works together, seamlessly.",
-    },
-    {
-      number: "05",
-      title: "Ongoing Support",
-      description:
-        "We don't disappear after launch. Monthly support to monitor, update, and improve your AI systems as your business grows.",
-    },
-  ];
-
+function AutomationPricing() {
   return (
-    <section id="services" className="py-24 px-6">
+    <section id="pricing" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <p className="text-xs uppercase tracking-widest text-gray-50 mb-4">What We Do</p>
-        <h2 className="text-4xl font-bold text-gray-90 mb-16">AI that actually runs your business</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map(({ number, title, description }) => (
-            <div key={number} className="p-6 rounded-2xl border border-gray-20 hover:border-gray-30 transition-colors">
-              <div className="text-xs text-gray-30 mb-4">{number}</div>
-              <h3 className="font-semibold text-gray-90 mb-3 leading-snug">{title}</h3>
-              <p className="text-sm text-gray-50 leading-relaxed">{description}</p>
+        <p className="text-xs uppercase tracking-widest text-gray-50 mb-4">AI Automation Services</p>
+        <h2 className="text-4xl font-bold text-gray-90 mb-4">Automation packages built for results</h2>
+        <p className="text-gray-50 leading-relaxed mb-16 max-w-2xl">
+          Every automation is custom-built to your workflow — designed to save hours, reduce errors, and generate revenue. Not templates. Not prompts. Real automations that run on their own.
+        </p>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
+          {/* Tier 1 */}
+          <div className="p-8 rounded-2xl border border-gray-20 hover:border-accent transition-colors flex flex-col">
+            <div className="text-xs uppercase tracking-widest text-gray-30 mb-4">Starter</div>
+            <div className="text-4xl font-bold text-gray-90 mb-1">$1,000</div>
+            <div className="text-sm text-gray-50 mb-8">per automation</div>
+            <ul className="space-y-3 mb-8 flex-grow">
+              {[
+                "1 custom AI automation",
+                "Built to your specific workflow",
+                "Connects to your existing tools",
+                "Testing & QA before launch",
+                "30-day support after delivery",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-gray-70">
+                  <span className="text-accent mt-0.5 shrink-0">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={CALCOM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-gray-90 text-white font-semibold py-3 rounded-full text-center hover:bg-gray-80 transition-colors"
+            >
+              Book Audit Call →
+            </a>
+          </div>
+
+          {/* Tier 2 */}
+          <div className="p-8 rounded-2xl border-2 border-accent bg-gray-10 flex flex-col relative">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-xs px-3 py-1 rounded-full">Most Popular</div>
+            <div className="text-xs uppercase tracking-widest text-gray-30 mb-4">Growth</div>
+            <div className="text-4xl font-bold text-gray-90 mb-1">$5,000</div>
+            <div className="text-sm text-gray-50 mb-8">4 automations bundled</div>
+            <ul className="space-y-3 mb-8 flex-grow">
+              {[
+                "4 custom AI automations",
+                "Built to your specific workflows",
+                "Cross-tool integration & logic",
+                "Priority support & tuning",
+                "60-day support after delivery",
+                "Billed as a single project",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-gray-70">
+                  <span className="text-accent mt-0.5 shrink-0">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={CALCOM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-accent text-white font-semibold py-3 rounded-full text-center hover:bg-accent-bright transition-colors"
+            >
+              Book Audit Call →
+            </a>
+          </div>
+        </div>
+        <div className="mt-8 text-center">
+          <p className="text-sm text-gray-50">
+            Need unlimited?{" "}
+            <Link href="/ai-automation-services" className="text-accent hover:underline">
+              See our Unlimited Retainer →
+            </Link>
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Consultation() {
+  return (
+    <section id="consultation" className="py-24 px-6 bg-accent text-white">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-white/60 mb-4">AI Business Solutions</p>
+            <h2 className="text-4xl font-bold leading-tight mb-6">
+              Not sure where AI fits your business?
+              <br />Let&apos;s map it out together.
+            </h2>
+            <p className="text-white/80 leading-relaxed mb-6">
+              Book a 45-minute strategy call with us. We&apos;ll hear about your business, identify the biggest time-wasters and bottlenecks, and assess where AI can make the biggest impact — fast.
+            </p>
+            <p className="text-white/80 leading-relaxed">
+              You walk away with a concrete, actionable AI automation plan — custom to your business. No fluff, no pitch. Just clarity on what to do next.
+            </p>
+          </div>
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div className="mb-6">
+              <div className="text-5xl font-bold mb-2">{PRICE}</div>
+              <div className="text-sm text-white/60">45-Minute Strategy Call + AI Automation Plan</div>
             </div>
-          ))}
+            <ul className="space-y-4 mb-8">
+              {[
+                "Deep dive into your business operations and pain points",
+                "Identify the highest-impact AI opportunities for your workflow",
+                "Receive a written AI automation plan — delivered after the call",
+                "Specific tool recommendations and implementation roadmap",
+                "Clear pricing on next steps — no hidden costs",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-white/90">
+                  <span className="text-white mt-0.5 shrink-0">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={CALCOM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-white text-accent font-semibold py-3 rounded-full text-center hover:bg-white/90 transition-colors"
+            >
+              Book Your {PRICE} Strategy Call →
+            </a>
+            <p className="text-xs text-white/50 text-center mt-4">
+              Or <Link href="/consultation" className="underline hover:text-white/80">see the full consultation page</Link> with process details, FAQ, and calendar booking.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -209,61 +298,6 @@ function Process() {
               <p className="text-sm text-gray-50 leading-relaxed">{description}</p>
             </div>
           ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Consultation() {
-  return (
-    <section id="consultation" className="py-24 px-6 bg-accent text-white">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-xs uppercase tracking-widest text-white/60 mb-4">AI Business Solutions</p>
-            <h2 className="text-4xl font-bold leading-tight mb-6">
-              Not sure where AI fits your business?
-              <br />Let&apos;s map it out together.
-            </h2>
-            <p className="text-white/80 leading-relaxed mb-6">
-              Book a 45-minute strategy call with us. We&apos;ll hear about your business, identify the biggest time-wasters and bottlenecks, and assess where AI can make the biggest impact — fast.
-            </p>
-            <p className="text-white/80 leading-relaxed">
-              You walk away with a concrete, actionable AI automation plan — custom to your business. No fluff, no pitch. Just clarity on what to do next.
-            </p>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <div className="mb-6">
-              <div className="text-5xl font-bold mb-2">$299</div>
-              <div className="text-sm text-white/60">45-Minute Strategy Call + AI Automation Plan</div>
-            </div>
-            <ul className="space-y-4 mb-8">
-              {[
-                "Deep dive into your business operations and pain points",
-                "Identify the highest-impact AI opportunities for your workflow",
-                "Receive a written AI automation plan — delivered after the call",
-                "Specific tool recommendations and implementation roadmap",
-                "Clear pricing on next steps — no hidden costs",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-white/90">
-                  <span className="text-white mt-0.5 shrink-0">✓</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <a
-              href="https://cal.com/hyperintelligent/45min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full bg-white text-accent font-semibold py-3 rounded-full text-center hover:bg-white/90 transition-colors"
-            >
-              Book Your {PRICE} Strategy Call →
-            </a>
-            <p className="text-xs text-white/50 text-center mt-4">
-              Or <Link href="/consultation" className="underline hover:text-white/80">see the full consultation page</Link> with process details, FAQ, and calendar booking.
-            </p>
-          </div>
         </div>
       </div>
     </section>
@@ -367,7 +401,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Problem />
-      <Services />
+      <AutomationPricing />
       <Consultation />
       <Process />
       <About />
