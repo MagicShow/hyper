@@ -166,10 +166,10 @@ function ExampleAutomations() {
             <div key={title} className="flex flex-col p-6 rounded-2xl border border-gray-20 hover:border-accent transition-colors">
               <div className="text-3xl mb-4">{icon}</div>
               <h3 className="font-semibold text-gray-90 mb-3 leading-snug">{title}</h3>
-              <p className="text-sm text-gray-50 leading-relaxed mb-6">{description}</p>
+              <p className="text-base text-gray-70 leading-relaxed mb-6">{description}</p>
               <div className="mt-auto space-y-3">
                 {examples.map((ex) => (
-                  <div key={ex} className="flex items-start gap-2 text-xs text-gray-30">
+                  <div key={ex} className="flex items-start gap-2 text-sm text-gray-50">
                     <span className="text-accent shrink-0 mt-0.5">→</span>
                     <span>{ex}</span>
                   </div>
