@@ -61,7 +61,7 @@ export default function ContactForm() {
         disabled={state.submitting}
         className="w-full bg-accent text-white font-medium py-3 rounded-full hover:bg-accent-bright transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {state.submitting ? "Sending..." : "Get a Free Consultation"}
+        {state.submitting ? "Sending..." : "Get a Consultation"}
       </button>
       <ValidationError errors={state.errors} />
       <p className="text-xs text-gray-30 text-center">
