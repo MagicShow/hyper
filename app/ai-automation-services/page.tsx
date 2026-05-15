@@ -194,8 +194,6 @@ function RetainerSection() {
             </div>
             <h2 className="text-4xl font-bold leading-tight mb-6">
               Unlimited Automations Retainer
-              <br />
-              <span className="text-accent">$10,000/month</span>
             </h2>
             <p className="text-gray-30 leading-relaxed mb-6">
               For businesses that want AI running at full capacity. No per-automation pricing. No limits. You get a dedicated automation team that builds, monitors, and improves your AI systems every single month.
@@ -214,8 +212,8 @@ function RetainerSection() {
           </div>
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex flex-col">
             <div className="mb-6">
-              <div className="text-4xl font-bold text-white mb-1">$10,000</div>
-              <div className="text-sm text-gray-30">per month · cancel anytime</div>
+              <div className="text-4xl font-bold text-white mb-1">Contact for Pricing</div>
+              <div className="text-sm text-gray-30">Custom monthly retainer · cancel anytime</div>
             </div>
             <ul className="space-y-3 mb-8 flex-grow">
               {RETAINER_FEATURES.map((feature) => (
@@ -261,7 +259,7 @@ function PricingSection() {
           {/* Tier 1 */}
           <div className="p-8 rounded-2xl border border-gray-20 flex flex-col">
             <div className="text-xs uppercase tracking-widest text-gray-30 mb-4">Starter</div>
-            <div className="text-4xl font-bold text-gray-90 mb-1">$1,000</div>
+            <div className="text-4xl font-bold text-gray-90 mb-1">Contact for Pricing</div>
             <div className="text-sm text-gray-50 mb-8">per automation</div>
             <ul className="space-y-3 mb-8 flex-grow">
               {[
@@ -291,7 +289,7 @@ function PricingSection() {
           <div className="p-8 rounded-2xl border-2 border-accent bg-gray-10 flex flex-col relative">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-xs px-3 py-1 rounded-full">Most Popular</div>
             <div className="text-xs uppercase tracking-widest text-gray-30 mb-4">Growth</div>
-            <div className="text-4xl font-bold text-gray-90 mb-1">$5,000</div>
+            <div className="text-4xl font-bold text-gray-90 mb-1">Contact for Pricing</div>
             <div className="text-sm text-gray-50 mb-8">4 automations bundled</div>
             <ul className="space-y-3 mb-8 flex-grow">
               {[
@@ -321,8 +319,8 @@ function PricingSection() {
           {/* Tier 3 */}
           <div className="p-8 rounded-2xl border border-gray-20 flex flex-col bg-gray-90 text-white">
             <div className="text-xs uppercase tracking-widest text-gray-30 mb-4">Unlimited</div>
-            <div className="text-4xl font-bold text-white mb-1">$10,000</div>
-            <div className="text-sm text-gray-30 mb-8">per month · cancel anytime</div>
+            <div className="text-4xl font-bold text-white mb-1">Contact for Pricing</div>
+            <div className="text-sm text-gray-30 mb-8">custom monthly retainer · cancel anytime</div>
             <ul className="space-y-3 mb-8 flex-grow">
               {[
                 "Unlimited automations",

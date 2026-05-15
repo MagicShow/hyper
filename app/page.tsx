@@ -126,7 +126,7 @@ function AutomationPricing() {
           {/* Tier 1 */}
           <div className="p-8 rounded-2xl border border-gray-20 hover:border-accent transition-colors flex flex-col">
             <div className="text-xs uppercase tracking-widest text-gray-30 mb-4">Starter</div>
-            <div className="text-4xl font-bold text-gray-90 mb-1">$1,000</div>
+            <div className="text-4xl font-bold text-gray-90 mb-1">Contact for Pricing</div>
             <div className="text-sm text-gray-50 mb-8">per automation</div>
             <ul className="space-y-3 mb-8 flex-grow">
               {[
@@ -156,7 +156,7 @@ function AutomationPricing() {
           <div className="p-8 rounded-2xl border-2 border-accent bg-gray-10 flex flex-col relative">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-xs px-3 py-1 rounded-full">Most Popular</div>
             <div className="text-xs uppercase tracking-widest text-gray-30 mb-4">Growth</div>
-            <div className="text-4xl font-bold text-gray-90 mb-1">$5,000</div>
+            <div className="text-4xl font-bold text-gray-90 mb-1">Contact for Pricing</div>
             <div className="text-sm text-gray-50 mb-8">4 automations bundled</div>
             <ul className="space-y-3 mb-8 flex-grow">
               {[
