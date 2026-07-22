@@ -355,8 +355,8 @@ function Contact() {
             <div className="space-y-3 text-sm text-gray-30">
               <div>
                 <span className="text-gray-30">Email:</span>{" "}
-                <a href="mailto:scott@hyperintelligent.dev" className="text-white hover:text-accent transition-colors">
-                  scott@hyperintelligent.dev
+                <a href="mailto:info@hyperintelligent.dev" className="text-white hover:text-accent transition-colors">
+                  info@hyperintelligent.dev
                 </a>
               </div>
               <div>
@@ -383,7 +383,7 @@ function Footer() {
           </div>
           <p className="text-xs text-gray-30">Woodburn, OR</p>
           <a href="tel:+19712432063" className="text-xs text-gray-30 hover:text-gray-90 transition-colors">971-243-2063</a>
-          <a href="mailto:scott@hyperintelligent.dev" className="text-xs text-gray-30 hover:text-gray-90 transition-colors">scott@hyperintelligent.dev</a>
+          <a href="mailto:info@hyperintelligent.dev" className="text-xs text-gray-30 hover:text-gray-90 transition-colors">info@hyperintelligent.dev</a>
         </div>
         <p className="text-xs text-gray-30 self-start md:self-auto">
           © 2026 Hyper Intelligent. AI that actually works.

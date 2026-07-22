@@ -390,7 +390,7 @@ function Footer() {
         </p>
         <div className="flex gap-4 text-xs text-gray-50">
           <Link href="/" className="hover:text-gray-90 transition-colors">Home</Link>
-          <a href="mailto:scott@hyperintelligent.dev" className="hover:text-gray-90 transition-colors">Contact</a>
+          <a href="mailto:info@hyperintelligent.dev" className="hover:text-gray-90 transition-colors">Contact</a>
         </div>
       </div>
     </footer>
