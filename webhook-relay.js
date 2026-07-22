@@ -19,7 +19,7 @@ PROJECT CONTEXT:
 - Offer: Voice agent + website bundles at $250 discount
 - Company: Hyper Intelligent (hyperintelligent.dev)
 - From address: Scott@hyperintelligent.dev
-- Phone: 971-243-2063
+- Phone: (231) 281-3542
 - Brand voice: direct, helpful, no fluff
 
 ---

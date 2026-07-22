@@ -382,7 +382,7 @@ function Footer() {
             <span className="font-semibold text-sm text-gray-90">HYPER INTELLIGENT</span>
           </div>
           <p className="text-xs text-gray-30">Woodburn, OR</p>
-          <a href="tel:+19712432063" className="text-xs text-gray-30 hover:text-gray-90 transition-colors">971-243-2063</a>
+          <a href="tel:+12312813542" className="text-xs text-gray-30 hover:text-gray-90 transition-colors">(231) 281-3542</a>
           <a href="mailto:info@hyperintelligent.dev" className="text-xs text-gray-30 hover:text-gray-90 transition-colors">info@hyperintelligent.dev</a>
         </div>
         <p className="text-xs text-gray-30 self-start md:self-auto">
