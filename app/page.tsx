@@ -18,6 +18,7 @@ function Header() {
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm text-gray-50">
+          <a href="tel:+12312813542" className="text-blue-600 hover:text-blue-700 font-medium transition-colors">(231) 281-3542</a>
           <a href="#consultation" className="hover:text-gray-90 transition-colors">Consultation</a>
           <a href="#pricing" className="hover:text-gray-90 transition-colors">Services</a>
           <a href="#process" className="hover:text-gray-90 transition-colors">How It Works</a>
