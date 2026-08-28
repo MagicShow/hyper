@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // ─── PROPS ────────────────────────────────────────────────────────────────────
 export const CALCOM_URL = "https://calendly.com/scott-hyperintelligent/30min";
-export const PRICE = "$499";
+export const PRICE = "$299";
 export const CALL_DURATION = "45 minutes";
 
 const BENEFITS = [
@@ -18,7 +18,7 @@ const PROCESS_STEPS = [
   {
     step: "01",
     title: "Book your call",
-    description: "Choose a time that works for you using our calendar. You'll be charged $499 to secure your spot.",
+    description: "Choose a time that works for you using our calendar. Booking is free — no payment required to reserve your spot.",
   },
   {
     step: "02",
@@ -43,8 +43,8 @@ const FAQ = [
     a: "We work with service businesses, local shops, and growing companies with 1–100 employees. If you're a founder or operator who's drowning in repetitive tasks, this is for you.",
   },
   {
-    q: "Is the $499 refundable?",
-    a: "The $499 fee covers the consultation and your custom plan. If you show up and we don't deliver a useful plan, we'll work with you to make it right.",
+    q: "How does the $299 work?",
+    a: "Booking is free — you pay nothing to schedule. The $299 covers the strategy call and your custom AI automation plan, invoiced after the call. If we don't deliver a useful plan, we'll work with you to make it right.",
   },
   {
     q: "Do I need to prepare for the call?",
@@ -139,7 +139,7 @@ function WhatYouGet() {
           <div className="bg-gray-10 rounded-2xl p-8 border border-gray-20">
             <div className="mb-6">
               <div className="text-5xl font-bold text-gray-90">{PRICE}</div>
-              <div className="text-sm text-gray-50 mt-1">45-Minute Strategy Call + AI Automation Plan</div>
+              <div className="text-sm text-gray-50 mt-1">45-Minute Strategy Call + AI Automation Plan — free to book</div>
             </div>
             <ul className="space-y-4">
               {BENEFITS.map((item) => (
@@ -223,7 +223,7 @@ function CTASection() {
         >
           Book Your {PRICE} Strategy Call →
         </a>
-        <p className="text-xs text-gray-50 mt-4">Limited spots available — we work with a small number of clients at a time.</p>
+        <p className="text-xs text-gray-50 mt-4">Free to book — no payment required. Limited spots available — we work with a small number of clients at a time.</p>
       </div>
     </section>
   );
